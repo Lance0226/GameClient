@@ -18,7 +18,7 @@ public class DisplayDemo : MonoBehaviour {
 	public string GetName(int index)
 	{
 	try{
-		Person person=pTable.GetPlayer (index);
+		player_info person=pTable.GetPlayer (index);
 		return person.name;
 		}
 	catch(Exception e)

@@ -5,22 +5,22 @@ using System;
 
 public class PlayerTable
 {
-	private List<Person> PlayerList;
+	private List<player_info> PlayerList;
 
 	public PlayerTable()
 	{
-		PlayerList = new List<Person> ();
+		PlayerList = new List<player_info> ();
 	}
 
-	public void AddPlayer(Person person)
+	public void AddPlayer(player_info person)
 	{
 		PlayerList.Add(person);
 	}
 
-	public Person GetPlayer(int index)
+	public player_info GetPlayer(int index)
 	{
 		    try{
-		    Person person = PlayerList [index];
+		    player_info person = PlayerList [index];
 			return person;
 		    }
 		    catch(Exception e)
